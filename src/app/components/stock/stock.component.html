@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row justify-content-center mt-5 p-5">
+        <div class="col-10 col-sm-6">
+            <div class='center'>
+                <div class="form-group">
+                    <input class="form-control" type="text" placeholder="100" #stock1 (keyup)="0"/>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" placeholder="20.50" #price1 (keyup)="0"/>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" placeholder="200" #stock2 (keyup)="0"/>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" placeholder="18.70" #price2 (keyup)="0"/>
+                </div>
+                <div class="form-group d-flex">
+                    <button type="form-group d-flex" class="btn btn-primary m-auto" (click)="calculatePrice(stock1.value, price1.value, stock2.value, price2.value)">Calculate</button>
+                </div>
+    <p ng-value="result.value"></p>
+</div>
