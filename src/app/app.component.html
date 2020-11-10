@@ -1,1 +1,28 @@
-    <app-stock></app-stock> 
+<div class="container">
+    <div class="row justify-content-center mt-5 p-5">
+        <div class="col-10 col-sm-6">
+            <div class='center'>
+                <div class="form-group">
+                    <input [(ngModel)]="stock1" name="stock1" type="number" placeholder="500"/>
+                    <Label>كمية الأسهم السابقة</Label>
+                </div>
+                <div class="form-group">
+                    <input [(ngModel)]="price1" name="price1" type="number" placeholder="20.30"/>
+                    <Label>سعر السهم السابق</Label>
+                </div>
+                <div class="form-group">
+                    <input [(ngModel)]="stock2" name="stock2" type="number" placeholder="500"/>
+                    <Label>كمية الأسهم الجديدة</Label>    
+                </div>
+                <div class="form-group">
+                    <input [(ngModel)]="price2" name="price2" type="number" placeholder="16.90"/>
+                    <Label>سعر السهم الجديد</Label>
+                </div>
+                <div class="form-group d-flex" (click)="calculate()">
+                    <button>احسب</button>
+                </div>
+                <h3>الناتج= {{ result }}</h3>
+            </div>
+        </div>
+    </div>
+</div>
