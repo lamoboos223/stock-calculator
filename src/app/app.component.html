@@ -1,28 +1,32 @@
-<div class="container">
+<body>
+<form class="container">
+<h1>حاسبة الأسهم</h1>
+<p>تهدف حاسبة الأسهم الى حساب متوسط سعر الأسهم الجديد بعد شراء كمية أسهم جديدة بسعر مختلف</p>
     <div class="row justify-content-center mt-5 p-5">
         <div class="col-10 col-sm-6">
             <div class='center'>
                 <div class="form-group">
-                    <input [(ngModel)]="stock1" name="stock1" type="number" placeholder="500"/>
-                    <Label>كمية الأسهم السابقة</Label>
+                    <label for="stock1"><b>كمية الأسهم السابقة</b></label>
+                    <input [(ngModel)]="stock1" name="stock1" type="number" placeholder="مثال: 500 سهم" required/>
                 </div>
                 <div class="form-group">
-                    <input [(ngModel)]="price1" name="price1" type="number" placeholder="20.30"/>
-                    <Label>سعر السهم السابق</Label>
+                    <label for="price1"><b>سعر السهم السابق</b></label>
+                    <input [(ngModel)]="price1" name="price1" type="number" placeholder="مثال: 20.43 ريال كلفك السهم الواحد" required/>
                 </div>
                 <div class="form-group">
-                    <input [(ngModel)]="stock2" name="stock2" type="number" placeholder="500"/>
-                    <Label>كمية الأسهم الجديدة</Label>    
+                    <label for="stock2"><b>كمية الأسهم الجديدة</b></label>
+                    <input [(ngModel)]="stock2" name="stock2" type="number" placeholder="مثال: 2000 سهم" required/>
                 </div>
                 <div class="form-group">
-                    <input [(ngModel)]="price2" name="price2" type="number" placeholder="16.90"/>
-                    <Label>سعر السهم الجديد</Label>
+                    <label for="price2"><b>سعر السهم الجديد</b></label>
+                    <input [(ngModel)]="price2" name="price2" type="number" placeholder="مثال: 16.80 ريال كلفك السهم الواحد" required/>
                 </div>
                 <div class="form-group d-flex" (click)="calculate()">
-                    <button>احسب</button>
+                    <button class="registerbtn">احسب</button>
                 </div>
                 <h3>الناتج= {{ result }}</h3>
             </div>
         </div>
     </div>
-</div>
+</form>
+</body>
