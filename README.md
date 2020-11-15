@@ -19,3 +19,7 @@ Run ng serve for a dev server. Navigate to http://localhost:4200/. The app will 
 ## Code scaffolding
 
 Run ng generate component component-name to generate a new component. You can also use ng generate directive|pipe|service|class|guard|interface|enum|module.
+
+## Publishing App on Github
+
+https://medium.com/coinmonks/how-to-deploy-an-angular-app-8db1af39f8c1
