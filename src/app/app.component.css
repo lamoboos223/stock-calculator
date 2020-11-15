@@ -65,13 +65,14 @@ hr {
 label {
   color: 7FFFD4;
   text-align: center;
+  font-family: "Comic Sans MS", cursive, sans-serif
 
 }
 
 /* Set a grey background color and center the text of the "sign in" section */
-.a {
-  background-color: #7FFFD4;
+p {
   text-align: center;
+  font-family: Impact, Charcoal, sans-serif;
 }
 
 
